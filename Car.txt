@@ -1,0 +1,41 @@
+package car.model;
+
+public class Car {
+
+    private String brand;
+    protected double priceRate;
+
+    public Car() {
+    }
+
+    public Car(String brand, double priceRate) {
+        this.brand = brand;
+        this.priceRate = priceRate;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public double getPriceRate() {
+        return priceRate;
+    }
+
+    public void setPriceRate(double priceRate) {
+        this.priceRate = priceRate;
+    }
+    
+    public double price() {
+        return priceRate;
+    }
+
+    @Override
+    public String toString() {
+        return "Car {" + "Brand = " + brand + ", Price = " + priceRate + "}";
+    }
+    
+}
