@@ -1,0 +1,30 @@
+package car.model;
+
+public class PickUpCap extends Car {
+    private double capRate;
+
+    public PickUpCap(double capRate, String brand, double priceRate) {
+        super(brand, priceRate);
+        this.capRate = capRate;
+    }
+
+    public double getCapRate() {
+        return capRate;
+    }
+
+    public void setCapRate(double capRate) {
+        this.capRate = capRate;
+    }
+
+    
+    @Override
+    public double price() {
+        return priceRate + capRate;
+    }
+    
+    @Override
+    public String toString() {
+        return "PickUpCap {" + super.toString() + " capRate = " + capRate + "}";
+    }
+    
+}
